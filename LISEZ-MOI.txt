@@ -1,0 +1,25 @@
+DUO BASKET PRO — installation sur Android
+
+CONTENU
+- index.html : application
+- app.js : scores, objectifs, chronomètre et sauvegarde locale
+- manifest.webmanifest : identité installable
+- sw.js : cache hors connexion
+- icône 192 et 512 px
+
+IMPORTANT
+Une PWA installable et utilisable hors connexion doit être publiée une première fois sur une adresse HTTPS.
+Ouvrir simplement index.html depuis le dossier téléchargé ne suffit pas pour activer l'installation ni le service worker.
+
+MISE EN LIGNE GRATUITE (exemple avec GitHub Pages)
+1. Depuis un ordinateur, crée un compte GitHub si nécessaire et un nouveau dépôt public nommé duo-basket-pro.
+2. Envoie tous les fichiers de ce dossier à la racine du dépôt.
+3. Dans Settings > Pages, choisis Deploy from a branch, puis la branche main et le dossier / (root), et enregistre.
+4. Attends que GitHub Pages affiche l'adresse HTTPS du site.
+5. Sur ton Android, ouvre cette adresse dans Chrome.
+6. Appuie sur ⋮ puis « Installer l'application » ou « Ajouter à l'écran d'accueil ».
+
+HORS CONNEXION
+Ouvre l'application une première fois avec Internet et laisse-la charger complètement. Le service worker met ensuite les fichiers en cache. Les scores et objectifs sont sauvegardés localement sur ce téléphone dans le navigateur. Ils ne sont pas synchronisés entre deux téléphones.
+
+Pour mettre à jour l'application, remplace les fichiers sur l'hébergement, puis recharge l'application avec Internet.
